@@ -1,12 +1,12 @@
 function Mostrar()
 {
 
-var clave = prompt("ingrese el número clave.");
+var clave = prompt("Escriba el numero del 1 al 10 en el que estoy pensando.");
 
-while( clave!="utn750")
+while( clave!="7")
 {
-    clave=prompt("Burro!!!Error ingrese la clave nuevamente");
+    clave=prompt("Numero incorrecto!!!");
 }
 
-alert("Clave correcta");
+alert("Muy bien acerto!!!!");
 }//FIN DE LA FUNCIÓN

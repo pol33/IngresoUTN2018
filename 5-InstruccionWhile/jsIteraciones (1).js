@@ -1,12 +1,16 @@
 function Mostrar()
 {
-	var num=1;
-	num=num+1;
-	while( num < 11 )
+    var num=2;
+	while( num <= 100)
 	{
 		
-		console.log(num);
+        console.log(num);
+        num=num+1;
+        
 	}
+    
+}
 
 
-}//FIN DE LA FUNCIÓN
+
+//FIN DE LA FUNCIÓN
