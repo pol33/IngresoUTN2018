@@ -6,17 +6,17 @@ function Mostrar()
 	var respuesta='si';
     var valor;
 
-	while(respuesta=="si")
+	do
        {
-		   respuesta=prompt("¿Desea continuar?");
-	   
-		   valor=parseInt(prompt("Escriba un numero"));
+		   valor=parseInt(prompt("¿Escriba un numero"));
+		   contador++;
+		   acumulador=acumulador+valor;
+	       respuesta=(prompt("¿Desea continuar?"));
 		   
-		       contador++;
-			   acumulador=acumulador+valor;
-			}
-	   }
-	}
+		       
+			}while(respuesta=="si");
+	   
+	
 
 
 document.getElementById('suma').value=acumulador;
