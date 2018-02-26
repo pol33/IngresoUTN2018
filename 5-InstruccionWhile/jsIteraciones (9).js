@@ -1,32 +1,38 @@
 function Mostrar()
 {
 
-	var num1;
-	var num2;
+	var flag=0;
+	var num;
 	var respuesta;
-	var acumulador;
+	var minimo;
+	var maximo;
 
 	do
-       {
-		   num1=parseInt(prompt("Escriba un numero"));
-		   num2=parseInt(prompt("Escriba un numero"));
-
-		   if(num1>num2)
-		   {
-			   maximo=num1;
-			   minimo=num2;
-			   
-		   }
-		   else
-			   maximo=num2;
-			   minimo=num1;
-
-			   
-			   respuesta=(prompt("¿Desea continuar?")); 
-			}while(respuesta=="si");
+       {  
+		  num = parseInt(prompt("ingrese un numero"));
+		
+		  
+	  if( num < minimo || flag==0)
+	   {
+		   minimo = num;
+		   
+		      
+	   }
+     
+	   if( num > maximo || flag==0)     
+	   {
+		   maximo = num;
+		   flag=1;
+		   
+	   }
+	   
+	
+	   
+	   respuesta = prompt("desea continuar?(no) para salir");
+		 }while(respuesta=="s");
 			
-			document.getElementById('minimo').value=minimo;
-			document.getElementById('maximo').value=maximo;
+			document.getElementById("minimo").value=minimo;
+			document.getElementById("maximo").value=maximo;
 
 
 
