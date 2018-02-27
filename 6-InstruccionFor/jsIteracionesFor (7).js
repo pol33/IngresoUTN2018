@@ -3,7 +3,7 @@ function Mostrar()
     var contDivi=0;
     var num=parseInt(prompt("Ingrese un numero"));
     
-    for(i=1  ;i<num ;i++ )
+    for(i=1  ;i<=num ;i++ )
     {
        if(num%i==0)
        {
