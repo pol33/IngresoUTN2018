@@ -1,13 +1,13 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
 {
-    var lado=parseInt(document.getElementById("lado").Value);
+    var lado=parseInt(document.getElementById("lado").value);
+    var perimetro;
 
-    var p;
+    perimetro=lado*3;
 
-    p=lado*3;
+    alert("El perimetro es "+ perimetro+ " metros.");
 
-    alert("El perimetro es " + p);
 	
 	
 }

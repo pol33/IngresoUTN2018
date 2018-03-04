@@ -1,15 +1,18 @@
 //Debemos lograr mostrar un mensaje al presionar el botón  'MOSTRAR'.
 function Mostrar()
 {
-    var mesDelAño=prompt("ingrese un mes del año");
+    var mes=prompt("Elija un mes");
     
-    
-    switch (mes)
+    switch(mes)
     {
         case "enero":
         case "febrero":
-
-         alert("Veranito");
+        alert("Veranito!!!");
+        break;
+        default:
+        alert("Extraño las vacaciones");
     }
-    
-     }
+
+	
+}
+
